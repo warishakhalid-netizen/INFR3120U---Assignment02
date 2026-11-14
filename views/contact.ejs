@@ -1,5 +1,55 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+
+<!-- Used Bootstrap V6.0 to create a set container with margins -->
+<main class = "text-center container my-5">
+<!-- Contact Me page heading within h1-->
+    <h1 class = "text-center mb-5"> CONTACT ME!🌷</h1>
+<!--Use the p tag to create a subtext below the header-->
+    <p class = "text-center mb-3">
+        Have a questions OR want to connect? Feel free to reach out!💕
+    </p>  
+    
+<!--Use Bootstrap version 4.0 to create to text input fields for first and last name-->
+<form>
+  <div class="row my-5">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+
+<!-- Use Bootstrap version 6.0 to create a space for user to input email address -->
+<div class="form-field mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <div class="form-text">
+    We will never share your email with anyone else.
+  </div>
+</div>
+
+<!-- Use Bootstrap version 5.0 to create a text-area for any user comments-->
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Comments?</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<!--Use Bootstrap version 4.0 to create a submit button-->
+<div class="col-auto">
+      <button type="submit" class="btn btn-primary my-3">Submit</button>
+</div>
+
+<!--Use Bootstrap version 4.0 to create a reset button-->
+<div class="col-auto">
+      <button type="reset" class="btn btn-primary my-3">Reset</button>
+</div>
+
+
+</main>
+
+
+
 <%- include partials/footer.ejs %>

@@ -1,5 +1,32 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+
+<!-- Used Bootstrap V6.0 to create a set container with margins -->
+<main class = "text-center container my-5">
+    <h1 class = "text-center mb-5"> WELCOME TO MY PORTFOLIO!🌷</h1>
+
+    <h2 class = "mb-5"> Hi! I'm Warisha! </h2>
+
+    <p>
+        I am currently a second year Networking & IT Security Student at Ontario Tech University.
+    </p>
+
+    <p class = "mb-5">
+        I am interested in technology, programming, networking, and learning new skills.
+    </p>
+
+    <p class = "text-center mb-5">
+        Through this portfolio, I hope to share more about myself and the projects I have worked on!
+    </p>
+
+<!-- Include a portrait image using image source method.
+ Create class image-fluid from using bootstrap in order to create a rounded responsive image.
+ -->
+    <img src = "assets\images\portrait.jpg"
+    class = "img-fluid rounded-circle"
+    width = "250">
+
+
+</main>
+
 <%- include partials/footer.ejs %>

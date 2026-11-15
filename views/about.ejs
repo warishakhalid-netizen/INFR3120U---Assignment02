@@ -1,5 +1,54 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+
+<main class = "container text-center my-5">
+<h1 class = "text-center mb-5"> ABOUT ME!🌷</h1>
+
+<!-- Used from Bootstrap version 5.0 - stacked horizontal grid system-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="/assets/images/portrait.jpg"
+      class="img-fluid rounded-circle"
+      width="250"
+      alt="Picture of me!">
+    </div>
+
+
+
+    <div class="col-sm-8">
+        <h2 class = 'mb-5'><i class="fa-solid fa-paw" style="color: rgb(190, 152, 185);"></i> A Little About Me!</h2>
+        <p> I would describe myself as someone who is curious, hardworking, and always 
+          willing to take on a challenge. I enjoy solving problems and figuring out how things work,
+          espcially when I get to apply what I've learned. I also love animals and I have a grey cat named Ash!
+        </p>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-sm">
+      <h3 class ="card-title"><i class="fa-solid fa-graduation-cap" style="color: rgb(190, 152, 185);"></i> Education</h3>
+    <p class ="card-text my-3 mb-2"> Ontario Tech University</p>
+    <p class="card-text">Networking & IT Security</p>
+    <p class="card-text">Expected Graduation: 2029</p>
+    </div>
+
+    <div class="col-sm">
+      <h3 class ="card-title"><i class="fa-solid fa-keyboard" style="color: rgb(190, 152, 185);"></i> Skills</h3>
+    <p class ="card-text my-3 mb-2"> HTML & CSS</p>
+    <p class="card-text">JavaScript</p>
+    <p class="card-text">Computer Networking</p>
+  
+    </div>
+
+    <div class="col-sm">
+      <h3 class ="card-title"><i class="fa-solid fa-person-hiking" style="color: rgb(190, 152, 185);"></i> Interests</h3>
+    <p class ="card-text my-3 mb-2"> Cooking & Baking </p>
+    <p class="card-text"> Reading</p>
+    <p class="card-text"> Hiking</p>
+  </div>
+</div>
+
+</main>
+
 <%- include partials/footer.ejs %>

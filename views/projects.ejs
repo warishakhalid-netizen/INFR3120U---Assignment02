@@ -1,14 +1,17 @@
+<!--Include shared header and navigation-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
 <main class = "container text-center my-5">
 <h1 class = "text-center mb-5"> MY PROJECTS!🌷</h1>
+
+<!--Bootstrap grid displaying five project cards-->
 <!--Project 1-->
 <div class="row g-4 justify-content-center">
     <div class="col-4">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"> Project #1: Ip Addressing & Subnetting</h5>
+                <h2 class="card-title"> Project #1: Ip Addressing & Subnetting</h2>
                 <p class="card-text"> Worked with IP addressing and subnetting problems to divide networks into smaller subnets.
                     Practiced calculating network addresses and usable host ranges, and subnet masks to support efficient network design.</p>
             </div>
@@ -20,7 +23,7 @@
     <div class="col-4">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"> Project #2: VLANs & Network Access Control</h5>
+                <h3 class="card-title"> Project #2: VLANs & Network Access Control</h3>
                 <p class="card-text"> Explored how VLANs separate devices into logical network segments and how access control lists regulate network traffic.
                 Learned how these techniques can improve network organization and restrict unauthorized communication.</p>
             </div>
@@ -31,7 +34,7 @@
     <div class="col-4">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"> Project #3: Personal Portfolio Website</h5>
+                <h4 class="card-title"> Project #3: Personal Portfolio Website</h4>
                 <p class="card-text"> Created a personal portfolio website featuring Home, About Me, Projects and Contact Me pages.
                     Practiced website navigation, page layouts and HTML forms.
                 </p>
@@ -55,7 +58,7 @@
     <div class="col-4">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"> Project #5: Network Services Research</h5>
+                <h6 class="card-title"> Project #5: Network Services Research</h6>
                 <p class="card-text">  Investigated how network services such as DNS and DHCP support everyday connectivity. 
                 Explored how devices obtain IP addresses and translate domain names into addresses to communicate across networks.</p>
             </div>
@@ -65,5 +68,5 @@
 
 </main>
 
-
+<!--Include the shared footer-->
 <%- include partials/footer.ejs %>

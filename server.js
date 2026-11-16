@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+//Import the Express application
 var app = require('./app');
 var debug = require('debug')('assignment-02-express:server');
 var http = require('http');
@@ -11,18 +11,19 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-
+//Use the hosting port, or port 3000 when running locally
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
- * Create HTTP server.
+ * Create HTTP server using the Express application.
  */
 
 var server = http.createServer(app);
 
 /**
- * Listen on provided port, on all network interfaces.
+ * Listen on provided port, on all network interfaces, start the server
+ * and listen for any requests.
  */
 
 server.listen(port);

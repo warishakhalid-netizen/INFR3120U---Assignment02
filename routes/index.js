@@ -1,12 +1,13 @@
 var express = require('express');
+//Create an Express router to handle page requests
 var router = express.Router();
 
-/* GET home page. */
+/* Display index.ejs when visitors open the main URL */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-/* GET home page. */
+/* Allow /home to display the same Home page */
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
@@ -25,5 +26,6 @@ router.get('/contactme', function(req, res, next) {
   res.render('contact', { title: 'Contact Me' });
 });
 
+//Export the router for use in app.js
 module.exports = router;
 
